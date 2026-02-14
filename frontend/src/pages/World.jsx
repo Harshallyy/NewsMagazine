@@ -5,7 +5,7 @@ const World = () => {
   const [worldNews, setWorldNews] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/news?q=world")
+    fetch("https://newsmagazine.onrender.com/api/news?q=world")
       .then((res) => res.json())
       .then((data) => {
         setWorldNews(data);
