@@ -32,8 +32,8 @@ const Home = ({ searchQuery }) => {
     setLoading(true);
 
     const baseURL = searchQuery
-      ? `http://localhost:5000/api/news?q=${searchQuery}`
-      : `http://localhost:5000/api/news`;
+      ? `https://newsmagazine.onrender.com/api/news?q=${searchQuery}`
+      : `https://newsmagazine.onrender.com/api/news`;
 
     fetch(baseURL)
       .then((res) => res.json())
@@ -43,11 +43,11 @@ const Home = ({ searchQuery }) => {
       });
 
     if (!searchQuery) {
-      fetch(`http://localhost:5000/api/news?q=india`)
+      fetch(`https://newsmagazine.onrender.com/api/news?q=india`)
         .then((res) => res.json())
         .then((data) => setIndiaNews(data));
 
-      fetch(`http://localhost:5000/api/news?q=world`)
+      fetch(`https://newsmagazine.onrender.com/api/news?q=world`)
         .then((res) => res.json())
         .then((data) => setWorldNews(data));
     }
