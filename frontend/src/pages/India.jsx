@@ -5,7 +5,7 @@ const India = () => {
   const [indiaNews, setIndiaNews] = useState([]);
 
 useEffect(() => {
-  fetch("http://localhost:5000/api/news?q=india")
+  fetch("https://newsmagazine.onrender.com/api/news?q=india")
     .then((res) => res.json())
     .then((data) => {
       setIndiaNews(data);
