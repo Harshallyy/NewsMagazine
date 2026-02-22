@@ -3,6 +3,10 @@
 A modern **Full Stack News Application** built using the MERN stack principles.  
 This project fetches real-time news using external APIs and provides category-based browsing with search functionality.
 
+**🔗 Live Links:**
+1. 🌐 Frontend (Netlify): [https://yournewsmagazine.netlify.app/](https://yournewsmagazine.netlify.app/)
+2. ⚙️ Backend API (Render): [https://newsmagazine.onrender.com/](https://newsmagazine.onrender.com/)
+
 ---
 
 ## 🚀 Live Features
